@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <config type="Step File" version="18" client_version="Build test 8.0.1.487(2025.01.23)(R3)" date="20260527112152" Guid="09c2aa4f-21ee-4e05-9855-36ba407fd0fa">
+    <Head_Info>
+      <Operate Value="66" />
+      <Scale Value="1" />
+      <Start_Step Value="1" Hide_Ctrl_Step="0" />
+      <RateType Value="103" />
+    </Head_Info>
+    <Whole_Prt>
+      <Record>
+        <Main>
+          <Time Value="10000" />
+        </Main>
+      </Record>
+    </Whole_Prt>
+    <Step_Info Num="8">
+      <Step1 Step_ID="1" Step_Type="2">
+        <Limit>
+          <Main>
+            <Curr Value="1300" />
+            <Stop_Volt Value="30000" />
+          </Main>
+        </Limit>
+      </Step1>
+      <Step2 Step_ID="2" Step_Type="2">
+        <Limit>
+          <Main>
+            <Curr Value="520" />
+            <Stop_Volt Value="30000" />
+          </Main>
+        </Limit>
+      </Step2>
+      <Step3 Step_ID="3" Step_Type="7">
+        <Limit>
+          <Main>
+            <Curr Value="1300" />
+            <Volt Value="42000" />
+            <Cap Value="3060000" />
+            <Stop_Curr Value="130" />
+          </Main>
+        </Limit>
+      </Step3>
+      <Step4 Step_ID="4" Step_Type="4">
+        <Limit>
+          <Main>
+            <Time Value="600000" />
+          </Main>
+        </Limit>
+      </Step4>
+      <Step5 Step_ID="5" Step_Type="7">
+        <Limit>
+          <Main>
+            <Curr Value="1300" />
+            <Volt Value="42000" />
+            <Time Value="60000" />
+            <Stop_Curr Value="130" />
+          </Main>
+        </Limit>
+      </Step5>
+      <Step6 Step_ID="6" Step_Type="4">
+        <Limit>
+          <Main>
+            <Time Value="300000" />
+          </Main>
+        </Limit>
+      </Step6>
+      <Step7 Step_ID="7" Step_Type="2">
+        <Limit>
+          <Main>
+            <Curr Value="1300" />
+            <Time Value="60000" />
+            <Stop_Volt Value="30000" />
+          </Main>
+        </Limit>
+      </Step7>
+      <Step8 Step_ID="8" Step_Type="6">
+      </Step8>
+    </Step_Info>
+    <SMBUS>
+      <SMBUS_Info Num="0" AdjacentInterval="0" />
+    </SMBUS>
+  </config>
+</root>
