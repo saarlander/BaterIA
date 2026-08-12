@@ -87,7 +87,7 @@ def extract_information_openai(text, client):
             "Capacity": "N/A"
         }
 
-    prompt_message = f"""Extract the following battery parameters from the provided text in JSON format, ignoring tolerance information. If there are conflicting charging limit voltage, return the lowest one:\n- Maximum charging current\n- Maximum discharging current\n- Maximum charging voltage\n- Capacity\n\nIf a parameter is not found, its value should be \"N/A\".\nThe JSON output should strictly follow this structure:\n{{\n  \"Maximum charging current\": \"value\",\n  \"Maximum discharging current\": \"value\",\n  \"Maximum charging voltage\": \"value\",\n  \"Capacity\": \"value\"\n}}\n\nText:\n{text}\n"""
+    prompt_message = f"""Extract the following battery parameters from the provided text in JSON format, ignoring tolerance information. If there are conflicting charging limit voltages, return the lowest one. If there is tolerance information, do not return the tolerance:\n- Maximum charging current\n- Maximum discharging current\n- Maximum charging voltage\n- Capacity\n\nIf a parameter is not found, its value should be \"N/A\".\nThe JSON output should strictly follow this structure:\n{{\n  \"Maximum charging current\": \"value\",\n  \"Maximum discharging current\": \"value\",\n  \"Maximum charging voltage\": \"value\",\n  \"Capacity\": \"value\"\n}}\n\nText:\n{text}\n"""
     try:
         st.info("Sending request to OpenAI API...")
         response = client.chat.completions.create(
